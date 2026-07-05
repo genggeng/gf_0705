@@ -1,1 +1,0 @@
-window.IMAGE_COLOR_AI_GOOGLE_CLIENT_ID = "";

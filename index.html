@@ -7,10 +7,11 @@
   <meta name="description" content="Use an AI image color picker to extract HEX, RGB, HSL, color names, palettes, CSS variables, and design suggestions from any image.">
   <link rel="canonical" href="https://imagecolorai.com/">
   <link rel="stylesheet" href="assets/styles.css">
-  <script src="config.js"></script>
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"AI Image Color Picker","applicationCategory":"DesignApplication","operatingSystem":"Web","description":"Pick colors from images and generate palettes, color names, CSS variables, and AI design suggestions.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I pick a color from an uploaded image?","acceptedAnswer":{"@type":"Answer","text":"Yes. Upload an image, click any visible point, and Image Color AI shows the selected HEX, RGB, and HSL values instantly."}},{"@type":"Question","name":"Does my image leave my browser?","acceptedAnswer":{"@type":"Answer","text":"No. The current color picker processes uploaded images in your browser for color extraction. The image is not intentionally uploaded to a server."}},{"@type":"Question","name":"Can I copy HEX, RGB, and HSL values?","acceptedAnswer":{"@type":"Answer","text":"Yes. The color panel includes copy buttons for HEX, RGB, and HSL values."}},{"@type":"Question","name":"Can I create a color palette from an image?","acceptedAnswer":{"@type":"Answer","text":"Yes. After you select a color from the image, the tool generates a small matching palette and CSS variables."}}]}
   </script>
 </head>
 <body>
@@ -23,14 +24,6 @@
         <a href="color-palette-from-image.html">Tools</a>
         <a href="hex-color-picker-from-image.html">HEX</a>
         <a class="nav-cta" href="#tool">Use your image</a>
-        <div class="auth-box">
-          <div id="googleSignIn"></div>
-          <div id="userMenu" class="user-menu" hidden>
-            <img id="userAvatar" alt="" class="user-avatar">
-            <span id="userName"></span>
-            <button id="logoutButton" type="button">Logout</button>
-          </div>
-        </div>
       </div>
     </nav>
   </header>
@@ -117,6 +110,27 @@
           <a class="page-link" href="tailwind-color-palette-generator.html"><h3>Tailwind Palette Generator</h3><p>Turn image colors into Tailwind-style tokens.</p></a>
         </div>
       </div>
+    </section>
+
+    <section class="section faq">
+      <h2>Image Color Picker FAQ</h2>
+      <p class="section-intro">Quick answers for designers, developers, and creators who need colors from images without extra steps.</p>
+      <details open>
+        <summary>Can I pick a color from an uploaded image?</summary>
+        <p>Yes. Upload an image, click any visible point, and Image Color AI shows the selected HEX, RGB, and HSL values instantly.</p>
+      </details>
+      <details>
+        <summary>Does my image leave my browser?</summary>
+        <p>No. The current color picker processes uploaded images in your browser for color extraction. The image is not intentionally uploaded to a server.</p>
+      </details>
+      <details>
+        <summary>Can I copy HEX, RGB, and HSL values?</summary>
+        <p>Yes. The color panel includes copy buttons for HEX, RGB, and HSL values.</p>
+      </details>
+      <details>
+        <summary>Can I create a color palette from an image?</summary>
+        <p>Yes. After you select a color from the image, the tool generates a small matching palette and CSS variables.</p>
+      </details>
     </section>
   </main>
 
