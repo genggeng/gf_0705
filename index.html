@@ -7,6 +7,8 @@
   <meta name="description" content="Use an AI image color picker to extract HEX, RGB, HSL, color names, palettes, CSS variables, and design suggestions from any image.">
   <link rel="canonical" href="https://imagecolorai.com/">
   <link rel="stylesheet" href="assets/styles.css">
+  <script src="config.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"AI Image Color Picker","applicationCategory":"DesignApplication","operatingSystem":"Web","description":"Pick colors from images and generate palettes, color names, CSS variables, and AI design suggestions.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
   </script>
@@ -21,6 +23,14 @@
         <a href="color-palette-from-image.html">Tools</a>
         <a href="hex-color-picker-from-image.html">HEX</a>
         <a class="nav-cta" href="#tool">Use your image</a>
+        <div class="auth-box">
+          <div id="googleSignIn"></div>
+          <div id="userMenu" class="user-menu" hidden>
+            <img id="userAvatar" alt="" class="user-avatar">
+            <span id="userName"></span>
+            <button id="logoutButton" type="button">Logout</button>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
