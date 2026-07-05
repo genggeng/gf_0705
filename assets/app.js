@@ -132,6 +132,8 @@ function initTool() {
   const upload = document.getElementById("imageUpload");
   const uploadMirror = document.getElementById("imageUploadMirror");
   const screenPick = document.getElementById("screenPick");
+  const palette = document.getElementById("palette");
+  const aiNotes = document.getElementById("aiNotes");
   if (!preview || !upload) return;
 
   preview.src = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(sampleSvg)}`;
@@ -189,6 +191,29 @@ function initTool() {
       await navigator.clipboard.writeText(target.textContent);
       button.textContent = "OK";
       setTimeout(() => { button.textContent = "Copy"; }, 900);
+    });
+  });
+
+  document.querySelectorAll(".tool-tab[data-mode]").forEach((tab) => {
+    tab.addEventListener("click", () => {
+      document.querySelectorAll(".tool-tab[data-mode]").forEach((item) => {
+        item.classList.toggle("active", item === tab);
+      });
+      palette?.classList.remove("is-focused");
+      aiNotes?.classList.remove("is-focused");
+
+      const mode = tab.dataset.mode;
+      if (mode === "image") {
+        preview.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
+      }
+      if (mode === "palette") {
+        palette?.classList.add("is-focused");
+        palette?.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
+      }
+      if (mode === "ai") {
+        aiNotes?.classList.add("is-focused");
+        aiNotes?.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
+      }
     });
   });
 }

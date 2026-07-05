@@ -37,9 +37,9 @@
       <div id="tool" class="tool-shell" aria-label="AI image color picker tool">
         <div class="tool-top">
           <div class="tool-tabs" aria-label="Tool modes">
-            <button class="tool-tab active" type="button">Image</button>
-            <button class="tool-tab" type="button">Color Palette</button>
-            <button class="tool-tab" type="button">AI Notes</button>
+            <button class="tool-tab active" type="button" data-mode="image">Image</button>
+            <button class="tool-tab" type="button" data-mode="palette">Color Palette</button>
+            <button class="tool-tab" type="button" data-mode="ai">AI Notes</button>
           </div>
           <span class="safe-note">Runs in your browser</span>
         </div>
@@ -72,7 +72,7 @@
               <label class="button primary upload-button">Use your own image<input id="imageUploadMirror" type="file" accept="image/*" aria-label="Upload your own image"></label>
               <button id="screenPick" class="button" type="button">Pick from screen</button>
             </div>
-            <div class="ai-card">
+            <div class="ai-card" id="aiNotes">
               <h3>AI color read: <span id="colorName">Studio Green</span></h3>
               <p id="aiMood">Fresh, calm, organic. Good for wellness, SaaS, and editorial interfaces.</p>
             </div>

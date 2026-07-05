@@ -196,6 +196,10 @@ h1 {
   border-color: var(--line);
 }
 
+.tool-tab:active {
+  transform: translateY(1px);
+}
+
 .safe-note {
   color: #6b7280;
   font-size: 13px;
@@ -360,6 +364,12 @@ h1 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 8px;
+}
+
+.palette.is-focused,
+.ai-card.is-focused {
+  outline: 3px solid rgba(109, 93, 252, 0.32);
+  outline-offset: 4px;
 }
 
 .swatch {
