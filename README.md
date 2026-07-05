@@ -10,6 +10,7 @@ Static launch package for an AI-assisted image color picker.
 - `/pick-color-from-image.html` targets `pick color from image`.
 - `/hex-color-picker-from-image.html` targets `HEX color picker from image`.
 - `/tailwind-color-palette-generator.html` targets `Tailwind color palette generator from image`.
+- `/how-to-pick-a-color-from-an-image-procreate.html` targets `how to pick a color from an image procreate`.
 - `/privacy.html` is the production Privacy Policy page.
 
 ## Deploy
