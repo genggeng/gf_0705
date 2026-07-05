@@ -1,6 +1,8 @@
 # Image Color AI SEO Site
 
-Static launch package for an AI-assisted image color picker.
+Static launch package for [image color picker](https://imagecolorai.com), a browser-based tool for picking HEX, RGB, and HSL colors from any uploaded image.
+
+Live site: https://imagecolorai.com
 
 ## Pages
 
