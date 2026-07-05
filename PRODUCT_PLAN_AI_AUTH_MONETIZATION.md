@@ -284,7 +284,24 @@ Cloudflare KV for cache and rate limiting
 OpenAI API for AI notes
 Google Sign-In for auth
 Stripe Checkout and webhooks for payment
-Turnstile for abuse protection when needed
+Cloudflare Turnstile for abuse protection when AI/API usage needs protection
+```
+
+Current production note:
+
+```text
+Do not add Turnstile to the current production pages yet.
+The live site is a pure frontend color picker, so Turnstile would add friction without protecting meaningful backend cost.
+```
+
+Add Cloudflare Turnstile later when one of these features goes live:
+
+```text
+Generate AI Notes calls OpenAI through /api/analyze-color
+Guest daily free AI quota can be abused
+Google login/account endpoints are active
+Stripe checkout or billing endpoints are active
+Feedback/contact forms accept public submissions
 ```
 
 API endpoints:

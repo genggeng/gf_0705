@@ -210,7 +210,7 @@ function initTool() {
         palette?.classList.add("is-focused");
         palette?.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
       }
-      if (mode === "ai") {
+      if (mode === "notes") {
         aiNotes?.classList.add("is-focused");
         aiNotes?.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
       }

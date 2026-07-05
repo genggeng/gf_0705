@@ -287,12 +287,15 @@ Do not deploy unused auth endpoints until the feature is live.
 
 No Turnstile is needed for the current pure frontend tool.
 
+Keep Cloudflare Turnstile as a future AI/API-stage item only. Do not add it to the current production pages because the core color picker runs locally in the browser and has no backend cost to protect.
+
 Turnstile becomes useful only when:
 
 ```text
 Real AI API is public
 Free quota can be abused
 Stripe/checkout or account endpoints are live
+Public feedback/contact forms are live
 ```
 
 ## 6. Recommended Submission Version

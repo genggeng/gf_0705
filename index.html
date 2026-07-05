@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI Image Color Picker - Pick HEX, RGB & Palettes from Images | Image Color AI</title>
-  <meta name="description" content="Use an AI image color picker to extract HEX, RGB, HSL, color names, palettes, CSS variables, and design suggestions from any image.">
+  <title>Image Color Picker - Pick HEX, RGB & Palettes from Images | Image Color AI</title>
+  <meta name="description" content="Use a free image color picker to extract HEX, RGB, HSL, color names, palettes, CSS variables, and design notes from any image.">
   <link rel="canonical" href="https://imagecolorai.com/">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -12,7 +12,7 @@
   <meta name="theme-color" content="#0C8F63">
   <link rel="stylesheet" href="assets/styles.css">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"WebApplication","name":"AI Image Color Picker","applicationCategory":"DesignApplication","operatingSystem":"Web","description":"Pick colors from images and generate palettes, color names, CSS variables, and AI design suggestions.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Image Color Picker","applicationCategory":"DesignApplication","operatingSystem":"Web","description":"Pick colors from images and generate palettes, color names, CSS variables, and design notes.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
   </script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I pick a color from an uploaded image?","acceptedAnswer":{"@type":"Answer","text":"Yes. Upload an image, click any visible point, and Image Color AI shows the selected HEX, RGB, and HSL values instantly."}},{"@type":"Question","name":"Does my image leave my browser?","acceptedAnswer":{"@type":"Answer","text":"No. The current color picker processes uploaded images in your browser for color extraction. The image is not intentionally uploaded to a server."}},{"@type":"Question","name":"Can I copy HEX, RGB, and HSL values?","acceptedAnswer":{"@type":"Answer","text":"Yes. The color panel includes copy buttons for HEX, RGB, and HSL values."}},{"@type":"Question","name":"Can I create a color palette from an image?","acceptedAnswer":{"@type":"Answer","text":"Yes. After you select a color from the image, the tool generates a small matching palette and CSS variables."}}]}
@@ -24,7 +24,7 @@
       <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>ImageColorAI.com</span></a>
       <div class="nav-links">
         <a href="index.html" aria-current="page">Color picker</a>
-        <a href="ai-color-palette-generator.html">AI Palette</a>
+        <a href="ai-color-palette-generator.html">Smart Palette</a>
         <a href="color-palette-from-image.html">Tools</a>
         <a href="hex-color-picker-from-image.html">HEX</a>
         <a class="nav-cta" href="#tool">Use your image</a>
@@ -36,17 +36,17 @@
     <section class="hero">
       <div class="hero-center">
         <h1>Image Color AI:<br>Extract colors from any image instantly.</h1>
-        <p class="hero-copy">Upload, paste, or sample an image to get HEX, RGB, HSL, palettes, and AI design notes.</p>
+        <p class="hero-copy">Upload an image or sample your screen to get HEX, RGB, HSL, palettes, and design notes.</p>
       </div>
     </section>
 
-    <section class="tool-section" aria-label="AI image color picker tool">
-      <div id="tool" class="tool-shell" aria-label="AI image color picker tool">
+    <section class="tool-section" aria-label="Image color picker tool">
+      <div id="tool" class="tool-shell" aria-label="Image color picker tool">
         <div class="tool-top">
           <div class="tool-tabs" aria-label="Tool modes">
             <button class="tool-tab active" type="button" data-mode="image">Image</button>
             <button class="tool-tab" type="button" data-mode="palette">Color Palette</button>
-            <button class="tool-tab" type="button" data-mode="ai">AI Notes</button>
+            <button class="tool-tab" type="button" data-mode="notes">Design Notes</button>
           </div>
           <span class="safe-note">Runs in your browser</span>
         </div>
@@ -80,7 +80,7 @@
               <button id="screenPick" class="button" type="button">Pick from screen</button>
             </div>
             <div class="ai-card" id="aiNotes">
-              <h3>AI color read: <span id="colorName">Studio Green</span></h3>
+              <h3>Color read: <span id="colorName">Studio Green</span></h3>
               <p id="aiMood">Fresh, calm, organic. Good for wellness, SaaS, and editorial interfaces.</p>
             </div>
             <div class="ai-card">
@@ -93,8 +93,8 @@
     </section>
 
     <section class="section">
-      <h2>Built for designers who need more than a color code</h2>
-      <p class="section-intro">Traditional image color pickers stop at HEX and RGB. This site turns uploaded images into palettes, color names, usage ideas, contrast-ready tokens, and prompts you can reuse in design tools.</p>
+      <h2>Get exact color codes and usable palettes</h2>
+      <p class="section-intro">Upload an image, pick a color, and turn it into a practical palette with color names, usage ideas, CSS variables, and frontend-ready values.</p>
       <div class="feature-grid">
         <article class="feature"><h3>Pick exact colors</h3><p>Click a photo, screenshot, UI mockup, logo, or product image to sample a precise pixel color.</p></article>
         <article class="feature"><h3>Generate palettes</h3><p>Build a five-color palette from the selected color with neutral, accent, and highlight suggestions.</p></article>
@@ -104,10 +104,10 @@
 
     <section class="content-band">
       <div class="section">
-        <h2>Long-tail tools</h2>
-        <p class="section-intro">Each page targets a specific image color workflow, so the site can rank beyond the main image color picker query.</p>
+        <h2>More ways to work with image colors</h2>
+        <p class="section-intro">Choose a focused tool for palettes, HEX codes, Tailwind tokens, or Procreate color workflows.</p>
         <div class="page-grid">
-          <a class="page-link" href="ai-color-palette-generator.html"><h3>AI Color Palette Generator</h3><p>Create AI-assisted palettes from images.</p></a>
+          <a class="page-link" href="ai-color-palette-generator.html"><h3>Smart Color Palette Generator</h3><p>Create design-ready palettes from images.</p></a>
           <a class="page-link" href="color-palette-from-image.html"><h3>Color Palette From Image</h3><p>Extract a usable palette from any photo.</p></a>
           <a class="page-link" href="pick-color-from-image.html"><h3>Pick Color From Image</h3><p>Sample exact colors from uploaded images.</p></a>
           <a class="page-link" href="hex-color-picker-from-image.html"><h3>HEX Color Picker</h3><p>Find and copy HEX codes from images.</p></a>
